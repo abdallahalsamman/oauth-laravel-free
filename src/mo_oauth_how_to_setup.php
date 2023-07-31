@@ -5,17 +5,17 @@ if (session_status() == PHP_SESSION_NONE) {
 
 if (isset($_SESSION['authorized']) && !empty($_SESSION['authorized'])) {
     if ($_SESSION['authorized'] != true) {
-        header('Location: mo_oauth_admin_login.php');
+        header('Location: mo_oauth_admin_login');
         exit();
     }
 }
 else {
-    header('Location: mo_oauth_admin_login.php');
+    header('Location: mo_oauth_admin_login');
     exit();
 }
 
 if (isset($_REQUEST['option'])) {
-    header('Location: mo_oauth_admin_login.php');
+    header('Location: mo_oauth_admin_login');
     exit();
 }
 ?>

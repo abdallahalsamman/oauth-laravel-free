@@ -12,7 +12,7 @@ if (isset($_SESSION['authorized']) && !empty($_SESSION['authorized'])) {
     $user = DB::get_registered_user();
     if($user != NULL){
         if ($_SESSION['authorized'] == true) {
-                header("Location: mo_oauth_setup.php");
+                header("Location: mo_oauth_setup");
                 exit();
         }
     }
@@ -58,7 +58,7 @@ if (isset($_REQUEST['option']) && $_REQUEST['option'] == 'admin_login') {
                 $_SESSION['authorized'] = true;
                 if (isset($_SESSION['authorized']) && !empty($_SESSION['authorized'])) {
                     if ($_SESSION['authorized'] == true) {
-                        header('Location: mo_oauth_setup.php');
+                        header('Location: mo_oauth_setup');
                         exit;
                     }
                 }
@@ -81,7 +81,7 @@ if (isset($_REQUEST['option']) && $_REQUEST['option'] == 'admin_login') {
                 $_SESSION['authorized'] = true;
             }
             $_SESSION['admin_email'] = $email;
-            header("Location: mo_oauth_setup.php");
+            header("Location: mo_oauth_setup");
             exit();
         } else {
             $_SESSION['invalid_credentials'] = true;

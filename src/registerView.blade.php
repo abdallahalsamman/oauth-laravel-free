@@ -34,7 +34,7 @@
             <h3 class="tile-title"
                 title="This will restrict unauthorized entity from accessing the Connector">Create account with miniOrange</h3>
             <form class="register_form" id="register_form" method="POST"
-                  action="mo_oauth_register.php">
+                  action="mo_oauth_register">
                 <input type="hidden" name="option" value="register">
                 <div class="tile-body">
                     <div class="form-group row">
@@ -100,7 +100,7 @@
                 </div>
                 <script>
                     document.getElementById("goto_login").onclick = function(){
-                        window.location.href = "mo_oauth_admin_login.php";
+                        window.location.href = "mo_oauth_admin_login";
                     }
                 </script>
             </form>

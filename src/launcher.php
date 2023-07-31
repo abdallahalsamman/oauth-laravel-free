@@ -22,10 +22,10 @@ if (!is_dir($_SERVER['DOCUMENT_ROOT'] . '/miniorange/sso')) {
 }
 if (isset($_SESSION)) {
     if (mo_oauth_is_user_registered() == NULL) {
-        header("Location: mo_oauth_register.php"); // https://www.google.com
+        header("Location: mo_oauth_register"); // https://www.google.com
         exit();
     } else {
-        header("Location: mo_oauth_admin_login.php");
+        header("Location: mo_oauth_admin_login");
         exit();
     }
 }

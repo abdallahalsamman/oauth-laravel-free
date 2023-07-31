@@ -7,6 +7,6 @@ unset($_SESSION['authorized']);
 
 session_destroy();
 
-header("Location: mo_oauth_admin_login.php");
+header("Location: mo_oauth_admin_login");
 exit();
 ?>

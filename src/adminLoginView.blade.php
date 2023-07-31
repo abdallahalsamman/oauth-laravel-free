@@ -72,7 +72,7 @@
                 </div>
                 <script>
                         document.getElementById("goto_register").onclick = function(){
-                            window.location.href = "mo_oauth_register.php";
+                            window.location.href = "mo_oauth_register";
                         }
                         <?php
                             if(mo_oauth_is_user_registered()){

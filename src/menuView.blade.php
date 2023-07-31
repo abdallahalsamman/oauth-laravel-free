@@ -35,7 +35,7 @@
                             <span><?php echo DB::get_registered_user()->email; ?></span>
                             <span><i class="fa fa-caret-down"></i></span></i></a>
             <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="mo_oauth_admin_logout.php"><i
+                <li><a class="dropdown-item" href="mo_oauth_admin_logout"><i
                                 class="fa fa-sign-out fa-lg"></i> Logout</a></li>
             </ul>
         </li>
@@ -54,15 +54,15 @@
         </div>
     </div>
     <ul id="app-menu" class="app-menu">
-        <li><a class="app-menu__item active" href="mo_oauth_setup.php"><i class="app-menu__icon fa fa-gear"></i><span
+        <li><a class="app-menu__item active" href="mo_oauth_setup"><i class="app-menu__icon fa fa-gear"></i><span
                         class="app-menu__label"><b>Plugin Settings</b></span></a></li>
-        <li><a class="app-menu__item" href="mo_oauth_how_to_setup.php"><i class="app-menu__icon fa fa-info-circle"></i><span
+        <li><a class="app-menu__item" href="mo_oauth_how_to_setup"><i class="app-menu__icon fa fa-info-circle"></i><span
                         class="app-menu__label"><b>How to Setup?</b></span></a></li>
-        <li><a class="app-menu__item" href="mo_oauth_account.php"><i class="app-menu__icon fa-solid fa-user"></i></i><span
+        <li><a class="app-menu__item" href="mo_oauth_account"><i class="app-menu__icon fa-solid fa-user"></i></i><span
                         class="app-menu__label"><b>Account Setup</b></span></a></li>
-        <li><a class="app-menu__item" href="mo_oauth_support.php"><i class="app-menu__icon fa-solid fa-headset"></i></i></i><span
+        <li><a class="app-menu__item" href="mo_oauth_support"><i class="app-menu__icon fa-solid fa-headset"></i></i></i><span
                         class="app-menu__label"><b>Support</b></span></a></li>
-        <li><a class="app-menu__item" href="mo_oauth_trial.php"><i class="app-menu__icon fa-solid fa-desktop"></i></i></i><span
+        <li><a class="app-menu__item" href="mo_oauth_trial"><i class="app-menu__icon fa-solid fa-desktop"></i></i></i><span
                         class="app-menu__label"><b>Trial/Demo Request</b></span></a></li>
     </ul>
 </aside>

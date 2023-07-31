@@ -31,7 +31,7 @@ if (isset($_SESSION)) {
         $_SESSION['authorized'] = true;
         if (isset($_SESSION['authorized']) && !empty($_SESSION['authorized'])) {
             if ($_SESSION['authorized'] == true) {
-                header('Location: mo_oauth_setup.php');
+                header('Location: mo_oauth_setup');
                 exit;
             }
         }
